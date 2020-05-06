@@ -176,7 +176,7 @@ class NamePatterns:
     def get_table_secondary_keywords(self):
         cur_path = os.path.dirname(os.path.abspath(__file__))
         keyword_path = os.path.join(cur_path, 'keywords')
-        if not os.path.is_file(keyword_path):
+        if not os.path.isfile(keyword_path):
             sys.exit("need text file with keywords to generate table and column names")
         with open(keyword_path) as f:
              return [i.strip() for i in f.readlines()]

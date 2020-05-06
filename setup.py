@@ -12,7 +12,7 @@ setup(
         'uwsgi',
         'coverage',
         'Flask',
-        'psycopg2',
+        'psycopg2-binary',
         'sqlalchemy',
         'scipy',
         'numpy',
